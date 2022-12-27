@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript/TypeScript/Vue</title>
+    <style>
+        body,a,a:hover{
+            background-color: #008bb5;
+            color: #ebe7e7;
+        }
+    </style>
+</head>
+<body>
+    <ul id="list">
+    </ul>
+    <script>
+        fetch("./list.json").then(response => response.json()).then(data => {
+            console.log(data);
+            document.getElementById("list").insertAdjacentHTML("beforeend", ((data) => {
+                return data.map((values) => {
+                    return `<li><a href='${values.url}'>${values.name}</a></li>`;
+                }).join("\n");
+            })(data));
+        })
+    </script>
+</body>
+
+</html>
