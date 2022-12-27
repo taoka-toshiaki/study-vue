@@ -2,5 +2,13 @@
     {
         "name":"OK Google?",
         "url":"https://www.google.co.jp"
-    }
+    },
+    {
+        "name":"JS1",
+        "url":"./js-code-1"
+    },
+    {
+        "name":"JS2",
+        "url":"./js-code-2"
+    }        
 ]
