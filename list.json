@@ -38,5 +38,9 @@
     {
         "name":"Vue2",
         "url":"./vue-code-2/index.html"
-    } 
+    },
+    {
+        "name":"Vue3",
+        "url":"./vue-code-3/index.html"
+    }  
 ]

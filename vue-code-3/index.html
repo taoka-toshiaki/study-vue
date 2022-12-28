@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .blue {
+        color: blue;
+    }
+</style>
+
+<body>
+    <div id="app">
+        <input type="number" v-model="num">{{ num }}
+        <div v-if="outservice">時間外労働</div>
+        <ul v-for="i of weeks" :key="i">
+            <li>{{ i.w }}</li>
+        </ul>
+        <button @click="ck_btn" :disabled="clicked" type="button">T!...T!!.test</button>
+        <!-- <button v-on:click="clicked=true" :disabled="clicked" type="button">T!...T!!.test</button> -->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.11"></script>
+    <script>
+        let app = new Vue({
+            el: '#app',
+            data: {
+                num:999,
+                outservice:((new Date()).getHours() > 9),
+                weeks:[{"w":"日"},{"w":"月"},{"w":"火"},{"w":"水"},{"w":"木"},{"w":"金"},{"w":"土"}],
+                clicked:false,
+            },
+            methods:{
+                ck_btn:function(){
+                    this.clicked = true;
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
