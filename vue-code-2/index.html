@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .blue {
+        color: blue;
+    }
+</style>
+
+<body>
+    <div id="app">
+        <div :class="hoge">
+            {{ message }}
+        </div>
+        <div v-html="test">
+            ABC
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.11"></script>
+    <script>
+        let app = new Vue({
+            el: '#app',
+            data: {
+                message: 'Hello Vue@2.7.11 !',
+                hoge: 'blue',
+                test: '<h1>AAAA</h1>'
+            }
+        });
+    </script>
+</body>
+
+</html>
