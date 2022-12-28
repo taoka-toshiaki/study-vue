@@ -18,5 +18,13 @@
     {
         "name":"JS4",
         "url":"./js-code-4"
-    }      
+    },
+    {
+        "name":"TSC1",
+        "url":"./tsc-code-1/index.ts"
+    },
+    {
+        "name":"TSC2",
+        "url":"./tsc-code-2/index.ts"
+    }        
 ]
