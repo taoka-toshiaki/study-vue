@@ -1,2 +1,2 @@
-var message = 'TypeScript';
-console.log(message);
+var msg = 'TypeScript';
+console.log(msg);

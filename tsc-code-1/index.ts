@@ -1,2 +1,2 @@
-let message = 'TypeScript';
-console.log(message);
+let msg :string = 'TypeScript';
+console.log(msg);
