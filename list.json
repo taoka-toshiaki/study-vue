@@ -26,5 +26,9 @@
     {
         "name":"TSC2",
         "url":"./tsc-code-2/index.ts"
-    }        
+    },
+    {
+        "name":"TSC3",
+        "url":"./tsc-code-3/index.ts"
+    }         
 ]
